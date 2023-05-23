@@ -4,7 +4,7 @@
     import Section from "@components/Section/Section.svelte";
     import Link from "@components/Link/Link.svelte";
     import Divider from "@components/Divider/Divider.svelte";
-    import photo from '@lib/assets/photo.png';
+    import photo from '@lib/assets/photo.jpg';
     import WordCloud from "@components/WordCloud/WordCloud.svelte";
     import { skills } from "@constants/skills";
 </script>
