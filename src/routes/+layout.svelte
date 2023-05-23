@@ -6,7 +6,9 @@
 
 <div class="app">
     <Header/>
-    <slot/>
+    <div class="content">
+        <slot/>
+    </div>
     <Footer/>
 </div>
 
@@ -16,6 +18,10 @@
         flex-direction: column;
         max-width: var(--column-width);
         margin: var(--column-margin-top) auto;
-        max-height: 100vh;
+        height: 100vh;
+    }
+
+    .content {
+        flex: 1;;
     }
 </style>
