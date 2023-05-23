@@ -22,12 +22,11 @@
     </Grid>
     <Grid axis="y">
         <p>
-            I am a frontend developer with 3 years of experience in web development.
+            Hi, I'm Olha Shambir, an experienced frontend developer with a passion for crafting exceptional web experiences.
             <br/>
-            I write as you might guess on Javascript and Typescript.
+            Proficient in JavaScript and TypeScript, with expertise in React Native.
+            Skilled in creating responsive and user-friendly interfaces.
             (<Link href="/about">More details</Link>)
-            <br/>
-            Also I have an experience in developing mobile applications using React Native.
         </p>
     </Grid>
     <Section title={"Latest posts"}>

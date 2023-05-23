@@ -5,6 +5,8 @@
     import Link from "@components/Link/Link.svelte";
     import Divider from "@components/Divider/Divider.svelte";
     import photo from '@lib/assets/photo.png';
+    import WordCloud from "@components/WordCloud/WordCloud.svelte";
+    import { skills } from "@constants/skills";
 </script>
 <svelte:head>
     <title>About</title>
@@ -16,7 +18,7 @@
         <img src={photo} alt="photo of developer"/>
         <Section title="Bio">
             <p>
-                Hi everyone 👋, my name is Olya. It's been 3 years as I&apos;m a developer in
+                Greetings, everyone! 👋 My name is Olya, and I have had the privilege of being a developer at
                 <Link
                         href="https://djangostars.com/main/"
                         target="_blank"
@@ -24,20 +26,32 @@
                 >
                     Djangostars
                 </Link>
+                for the past three years.
                 .
-                Our company is technical partner for many clients, we help people to pass the path from idea to huge working projects.
-                And I write on beautiful and mysterious Javascript and his brother Typescript.
+                Our company serves as a technical partner to numerous clients, guiding them along the transformative
+                journey from abstract ideas to robust, fully functional projects.
+                And I specialize in the JavaScript and its noble sibling, TypeScript.
                 <br/>
                 I mainly work with
                 <abbr title="React is an open-source JavaScript library for building user interfaces, maintained by Meta.">React</abbr>
-                and its ecosystem, but also I had broad experience in
+                and its vast ecosystem, although I also possess extensive experience in
                 <abbr title="Vue.js is an open-source MVVM JavaScript framework for building user interfaces">Vue</abbr>
                 and <abbr title="Angular is a TypeScript-based, open-source framework led by Google">Angular</abbr>.
                 <br/>
-                As someone said React Native contains word "React" and you know React - so you know React Native 💁.
-                So I followed this logic and helped to build a couple of apps with <abbr
+                As the saying goes, React Native shares the word "React," so those familiar with React inherently grasp
+                the essence of React Native 💁.
+                <br/>
+                Thus, I followed this logical path and contributed to the development of a couple of robust <abbr
                     title="React Native is an open-source UI software framework created by Meta Platforms">React
-                Native</abbr> 🧱. First app was for PADI Travel and mvp app now.
+                Native</abbr> applications 🧱.
+                The first app I worked on was for
+                <Link
+                        href="https://apps.apple.com/US/app/id1497105546?mt=8"
+                        target="_blank"
+                        rel="noopener"
+                >PADI Adventures
+                </Link>
+                , and I am currently buiding another commercial app from scratch.
                 <br/>
                 I also trying to keep up with
                 <Link
@@ -73,8 +87,20 @@
                     <br/>
                     I was responsible for implementing new features for web and mobile app.
                     <br/>
-                    🧩Tech stack: <em>React/Redux, React Native, Angular JS, ES6, Django
-                    Templates</em>.
+                    🧩Tech stack:
+                    <em>
+                        <br/>
+                        React/Redux,
+                        <br/>
+                        React Native,
+                        <br/>
+                        Angular JS,
+                        <br/>
+                        ES6,
+                        <br/>
+                        Django
+                        Templates
+                    </em>.
                     <br/>
                     Challenges that were passed:
                     rewrited legacy pages from Angular JS to React
@@ -83,15 +109,31 @@
                 </p>
                 <p class="description">
                     Next project is a mortgage provider 🏠 -
-                    <Link href="https://molofinance.com/" target="_blank" rel="noopener">MoloFinance</Link>.
+                    <Link href="https://molofinance.com/" target="_blank" rel="noopener">MoloFinance</Link>
+                    .
                     As project follows microfrontend architecture there were a lot work to do:
                     supporting internal libs, creating new components, refactoring old ones, supporting FE
                     infrastructure, etc.
                     <br/>
                     Also I was involved in mentoring interns.
                     <br/>
-                    🧩Tech stack: <em>Typescript, NextJs, VueJS, React/Redux, React Queries,
-                    Jest/Enzyme/Testing Library, MUI</em>.
+                    🧩Tech stack:
+                    <br/>
+                    <em>
+                        Typescript,
+                        <br/>
+                        NextJs,
+                        <br/>
+                        VueJS,
+                        <br/>
+                        React/Redux,
+                        <br/>
+                        React Queries,
+                        <br/>
+                        Jest/Enzyme/Testing Library,
+                        <br/>
+                        MUI
+                    </em>.
                     <br/>
                     Challenges that were passed:
                     gradually moving from monorepo to microfrontend architecture,
@@ -107,8 +149,19 @@
                     and admin app (for manager) with maps, full user management features, organisation setup and many
                     more.
                     <br/>
-                    🧩Tech stack that has been used: <em>React/React Queries, React Native, Google Maps, React Final
-                    Form</em>
+                    🧩Tech stack I'm working with: <em>
+                    <br/>
+                    React
+                    <br/>
+                    React Queries,
+                    <br/>
+                    React Native,
+                    <br/>
+                    Google Maps,
+                    <br/>
+                    React Final Form
+                    <br/>
+                </em>
                 </p>
                 <Divider axis="x"/>
             </div>
@@ -130,9 +183,9 @@
                 </h4>
                 <p class="description">
                     I've entered to internship after passing an exam on basics of programming.
-                    As a team, we were responsible for building internal tools for company.
+                    As a team, we were responsible for building internal tools for company, creating layouts etc.
                     <br/>
-                    Tech stack: <em>React, Javascript</em>.
+                    Tech stack: <em>React, Javascript, HTML/CSS</em>.
                 </p>
                 <Divider axis="x"/>
             </div>
@@ -161,7 +214,7 @@
             </div>
         </Section>
         <Section title="With what I actually worked with?">
-
+            <WordCloud words={skills}/>
         </Section>
     </Grid>
 </Page>
@@ -169,6 +222,7 @@
 <style>
     em {
         border-bottom: 1px solid var(--color-secondary);
+        margin-left: 4px;
     }
 
     .block {
@@ -183,6 +237,4 @@
     .description {
         margin-bottom: 1em;
     }
-
-
 </style>
