@@ -15,14 +15,9 @@
 </footer>
 
 <style>
-    footer {
-        position: fixed;
-        bottom: 0;
-    }
-
     ul {
         display: flex;
-        justify-content: space-around;
+        justify-content: flex-start;
         align-items: center;
         gap: 8px;
     }

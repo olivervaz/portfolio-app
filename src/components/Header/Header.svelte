@@ -22,9 +22,9 @@
             <li class={$page.url.pathname === '/blog' ? 'current' : undefined}>
                 <a href="/blog">Blog</a>
             </li>
-            <li class={$page.url.pathname === '/projects' ? 'current' : undefined}>
-                <a href="/projects">Projects</a>
-            </li>
+<!--            <li class={$page.url.pathname === '/projects' ? 'current' : undefined}>-->
+<!--                <a href="/projects">Projects</a>-->
+<!--            </li>-->
             <li class={$page.url.pathname === '/snippets' ? 'current' : undefined}>
                 <a href="/snippets">Snippets</a>
             </li>
