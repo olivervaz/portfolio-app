@@ -8,13 +8,15 @@ export function getCloudConfig(words: Word[]) {
     let radius = 0;
 
     return words.map((word) => {
-        const {name, weight} = word;
+        const { name, weight } = word;
 
         const scale = weight * 10;
-        const wordSize = name?.length + 10;
+        const wordSize = name?.length + 20;
 
-        const x = cloudWidth / 2 + radius * Math.cos(angle);
-        const y = cloudHeight / 2 + radius * Math.sin(angle);
+        const maxRadius = Math.min(cloudWidth / 2, cloudHeight / 2) - wordSize;
+
+        const x = cloudWidth / 2 + Math.min(maxRadius, radius) * Math.cos(angle);
+        const y = cloudHeight / 2 + Math.min(maxRadius, radius) * Math.sin(angle);
 
         angle += spiralResolution;
         radius += wordSize;
@@ -26,7 +28,6 @@ export function getCloudConfig(words: Word[]) {
             y,
             color: Math.random() > 0.5 ? '#104f55' : '#9da6e1',
             rotate: angle
-
-        }
+        };
     });
 }
