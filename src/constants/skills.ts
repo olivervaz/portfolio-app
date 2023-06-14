@@ -14,7 +14,7 @@ export const skills = [
         name: 'React',
     },
     {
-        weight: 3,
+        weight: 4,
         name: 'React Native',
     },
     {
@@ -30,7 +30,7 @@ export const skills = [
         name: 'Nodejs',
     },
     {
-        weight: 4,
+        weight: 3,
         name: 'Redux',
     },
     {
@@ -68,6 +68,14 @@ export const skills = [
     {
         weight: 3,
         name: 'Django',
+    },
+    {
+        weight: 3,
+        name: 'CI/CD',
+    },
+    {
+        weight: 3,
+        name: 'Storybook',
     }
 
 ]

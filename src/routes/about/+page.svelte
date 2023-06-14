@@ -18,7 +18,7 @@
         <img src={photo} alt="photo of developer"/>
         <Section title="Bio">
             <p>
-                Greetings, everyone! 👋 My name is Olya, and I have had the privilege of being a developer at
+                Greetings, everyone! 👋 My name is Olya, and I'm developer at
                 <Link
                         href="https://djangostars.com/main/"
                         target="_blank"
@@ -38,7 +38,7 @@
                 <abbr title="Vue.js is an open-source MVVM JavaScript framework for building user interfaces">Vue</abbr>
                 and <abbr title="Angular is a TypeScript-based, open-source framework led by Google">Angular</abbr>.
                 <br/>
-                As the saying goes, React Native shares the word "React," so those familiar with React inherently grasp
+                As the saying goes, React Native shares the word "React," so those who familiar with React inherently grasp
                 the essence of React Native 💁.
                 <br/>
                 Thus, I followed this logical path and contributed to the development of a couple of robust <abbr
@@ -51,7 +51,7 @@
                         rel="noopener"
                 >PADI Adventures
                 </Link>
-                , and I am currently buiding another commercial app from scratch.
+                , and another commercial app from scratch.
                 <br/>
                 I also trying to keep up with
                 <Link
@@ -133,6 +133,8 @@
                         Jest/Enzyme/Testing Library,
                         <br/>
                         MUI
+                        <br/>
+                        Storybook
                     </em>.
                     <br/>
                     Challenges that were passed:
